@@ -1,8 +1,6 @@
 <script lang="ts">
-    import { gameState } from "../classes/gameState.svelte";
-    import prisonersList from "../data/prisoners.json";
     import svelteLogo from "../assets/svelte.svg";
-    import type { PrisonerProps } from "../types/types";
+    import { gameState } from "../classes/gameState.svelte";
     import findPrisoner from "../utils/findPrisoner";
 
     let { name } = $props();

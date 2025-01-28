@@ -1,5 +1,5 @@
-import Character from "./Character";
 import type { PrisonerProps } from "../types/types";
+import Character from "./Character";
 
 class Prisoner extends Character {
     bounty: number;

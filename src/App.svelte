@@ -1,7 +1,6 @@
 <script lang="ts">
-    import Prisoner from "./components/Prisoner.svelte";
     import { gameState } from "./classes/gameState.svelte";
-    import QuotaMeter from "./components/QuotaMeter.svelte";
+    import Prisoner from "./components/Prisoner.svelte";
     import QuotaBar from "./components/QuotaBar.svelte";
 </script>
 
