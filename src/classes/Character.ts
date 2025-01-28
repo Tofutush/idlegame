@@ -1,7 +1,4 @@
-type CharacterProps = {
-    name: string,
-    color: string
-}
+import type { CharacterProps } from "../types/types";
 class Character {
     name: string;
     color: string;
