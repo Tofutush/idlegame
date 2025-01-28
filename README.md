@@ -1,10 +1,16 @@
 a random game idea i had on a whim as an excuse to learn svelte. why learn svelte? i dont know.
 
-# Idle Forced Labor Camp, an Incremental Game
+Idle Forced Labor Camp, an Incremental Game
 
 Dig rocks. Sell them into bucks. Fulfill quotas from above. Catch more prisoners and make them work night and day. Hire guards. Grow your camp. Truly the Bauhinian experience.
 
-可能听起来有点地狱，但我主打的就是一个地狱。
+may sound hellish, but thats what im going for
+
+放置苦劳营模拟器
+
+挖石头，卖钱，冲业绩，抓人进来没日没夜地干活，招聘狱警，把营地做大做强。太紫荆了这也。
+
+可能听起来有点地狱，但主打的就是一个地狱。
 
 # Svelte + TS + Vite
 
