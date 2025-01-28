@@ -9,7 +9,6 @@
 
     // find the character
     let p = findPrisoner(name);
-    if (!p) throw new Error(`prisoner ${name} not found`);
 
     // state vars
 
@@ -18,26 +17,35 @@
 
     // getters
 
-    function getAmountRocksPerClick(): number {
+    function getRocksPerClick(): number {
         return p.efficiency * level;
+    }
+
+    function getRocksPerSecond(): number {
+        return p.efficiency * autoClickLevel;
     }
 
     // events
     function digRock() {
-        gameState.rocks += getAmountRocksPerClick();
+        gameState.rocks += getRocksPerClick();
     }
     function levelUp() {
-        if (gameState.rocks > p.levelUpCost) {
+        if (gameState.rocks >= p.levelUpCost) {
             gameState.rocks -= p.levelUpCost;
             level++;
         }
     }
     function levelAutoClickUp() {
-        if (gameState.rocks > p.autoClickCost) {
+        if (gameState.rocks >= p.autoClickCost) {
             gameState.rocks -= p.autoClickCost;
             autoClickLevel++;
         }
     }
+
+    function autoDigRock() {
+        gameState.rocks += getRocksPerSecond();
+    }
+    setInterval(autoDigRock, 1000);
 </script>
 
 <div class="prisoner">
@@ -46,5 +54,7 @@
     <p>Auto click: {autoClickLevel}</p>
     <button onclick={digRock}>Dig</button>
     <button onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
-    <button onclick={levelAutoClickUp}>Stop slacking (cost: {p.autoClickCost})</button>
+    <button onclick={levelAutoClickUp}
+        >Stop slacking (cost: {p.autoClickCost})</button
+    >
 </div>
