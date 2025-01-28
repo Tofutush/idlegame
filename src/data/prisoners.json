@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Tomato",
+        "color": "#a10000",
+        "bounty": 0,
+        "efficiency": 1,
+        "levelUpCost": 10,
+        "autoClickCost": 20,
+        "speech": [
+            "I want to die.",
+            "Why does everyone make me work?"
+        ]
+    },
+    {
+        "name":"Tephra",
+        "color":"#008282",
+        "bounty":100,
+        "efficiency":1,
+        "levelUpCost":30,
+        "autoClickCost":50,
+        "speech":[
+            "This camp is going down with me.",
+            "I will burn this place down.",
+            "I'm so scared."
+        ]
+    }
+]

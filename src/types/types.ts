@@ -1,9 +1,13 @@
 type CharacterProps = {
     name: string,
-    color: string
+    color: string,
+    speech: Array<string>
 };
 type PrisonerProps = CharacterProps & {
-    bounty: number
+    bounty: number,
+    efficiency: number,
+    levelUpCost: number,
+    autoClickCost: number
 };
 type GuardProps = CharacterProps & {
     salary: number
