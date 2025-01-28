@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Prisoner from "./lib/Prisoner.svelte";
-	import { gameState } from "./gameState.svelte";
+	import Prisoner from "./components/Prisoner.svelte";
+	import { gameState } from "./classes/gameState.svelte";
 </script>
 
 <main>

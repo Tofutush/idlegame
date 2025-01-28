@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { gameState } from "../gameState.svelte";
+	import { gameState } from "../classes/gameState.svelte";
 	function addRock() {
 		gameState.rocks += 1;
 	}
