@@ -1,3 +1,11 @@
+a random game idea i had on a whim as an excuse to learn svelte. why learn svelte? i dont know.
+
+# Idle Forced Labor Camp, an Incremental Game
+
+Dig rocks. Sell them into bucks. Fulfill quotas from above. Catch more prisoners and make them work night and day. Hire guards. Grow your camp. Truly the Bauhinian experience.
+
+可能听起来有点地狱，但我主打的就是一个地狱。
+
 # Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
@@ -13,6 +21,10 @@ Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also pow
 ## Technical considerations
 
 **Why use this over SvelteKit?**
+
+I DOWNLOADED THIS THANG BEFORE I LEARNED THAT SVELTEKIT EXISTED. THATS WHY
+
+ALSO I DONT THINK I NEED ROUTING
 
 - It brings its own routing solution which might not be preferable for some users.
 - It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
