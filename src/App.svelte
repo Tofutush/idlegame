@@ -7,10 +7,8 @@
 <main>
     <QuotaMeter />
     <p>Rocks: {gameState.rocks}</p>
-    <Prisoner />
-    <Prisoner />
-    <Prisoner />
-    <Prisoner />
+    <Prisoner name="Tomato" />
+    <Prisoner name="Tephra" />
 </main>
 
 <style>

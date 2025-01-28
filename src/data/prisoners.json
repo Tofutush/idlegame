@@ -12,13 +12,13 @@
         ]
     },
     {
-        "name":"Tephra",
-        "color":"#008282",
-        "bounty":100,
-        "efficiency":1,
-        "levelUpCost":30,
-        "autoClickCost":50,
-        "speech":[
+        "name": "Tephra",
+        "color": "#008282",
+        "bounty": 100,
+        "efficiency": 1,
+        "levelUpCost": 30,
+        "autoClickCost": 50,
+        "speech": [
             "This camp is going down with me.",
             "I will burn this place down.",
             "I'm so scared."
