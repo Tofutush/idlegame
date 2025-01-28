@@ -6,6 +6,9 @@
 <main>
 	<p>Rocks: {gameState.rocks}</p>
 	<Prisoner />
+	<Prisoner />
+	<Prisoner />
+	<Prisoner />
 </main>
 
 <style>
