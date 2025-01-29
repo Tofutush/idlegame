@@ -1,9 +1,16 @@
-<script>
+<script lang="ts">
     let { show, hide, children } = $props();
+    function backgroundClick(e: MouseEvent) {
+        console.log("clicked", (e.target as HTMLElement).className);
+
+        if ((e.target as HTMLElement).classList.contains("modal-bg")) {
+            hide();
+        }
+    }
 </script>
 
 {#if show}
-    <div class="modal-bg">
+    <div class="modal-bg" onclick={backgroundClick}>
         <div class="modal">
             <button onclick={hide}>x</button>
             {@render children()}
