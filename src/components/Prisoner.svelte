@@ -1,6 +1,6 @@
 <script lang="ts">
     import svelteLogo from "../assets/svelte.svg";
-    import { gameState } from "../classes/gameState.svelte";
+    import gameState from "../classes/gameState.svelte";
     import findPrisoner from "../utils/findPrisoner";
 
     let { name } = $props();

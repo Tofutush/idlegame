@@ -6,7 +6,7 @@ interface GameState {
     prisoners: number;
     guards: number;
 }
-export const gameState: GameState = $state({
+let gameState: GameState = $state({
     rocks: 0,
     bucks: 0,
     level: 1,
@@ -14,3 +14,4 @@ export const gameState: GameState = $state({
     prisoners: 0,
     guards: 0
 });
+export default gameState;
