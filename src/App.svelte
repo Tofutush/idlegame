@@ -1,12 +1,16 @@
 <script lang="ts">
-    import gameState from "./classes/gameState.svelte";
+    import BuckCount from "./components/BuckCount.svelte";
+    import BuckExchange from "./components/BuckExchange.svelte";
     import Prisoner from "./components/Prisoner.svelte";
     import QuotaBar from "./components/QuotaBar.svelte";
+    import RockCount from "./components/RockCount.svelte";
 </script>
 
 <main>
+    <BuckCount />
+    <RockCount />
+    <BuckExchange />
     <QuotaBar />
-    <p>Rocks: {gameState.rocks}</p>
     <Prisoner name="Tomato" />
     <Prisoner name="Tephra" />
 </main>
