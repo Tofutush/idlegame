@@ -9,12 +9,10 @@
     let p = findPrisoner(name);
 
     // state vars
-
     let level = $state(1);
     let autoClickLevel = $state(0);
 
     // getters
-
     function getRocksPerClick(): number {
         return p.efficiency * level;
     }
@@ -47,6 +45,7 @@
 </script>
 
 <div class="prisoner">
+    <p>{p.name}</p>
     <img src={svelteLogo} alt="placeholder" />
     <p>Level: {level}</p>
     <p>Auto click: {autoClickLevel}</p>
