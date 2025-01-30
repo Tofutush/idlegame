@@ -24,10 +24,18 @@
     function hideModal() {
         modalShown = false;
     }
+
+    function handleClick() {
+        if (gameState.rocks <= 0) {
+            console.log('you have no rocks to sell!');
+        } else {
+            showModal();
+        }
+    }
 </script>
 
 <div class="buck-exchange">
-    <button onclick={showModal}>Sell rocks!</button>
+    <button onclick={handleClick}>Sell rocks!</button>
 </div>
 
 <Modal show={modalShown} hide={hideModal}>
