@@ -1,4 +1,5 @@
 <script lang="ts">
+    import toast from 'svelte-5-french-toast';
     import svelteLogo from '../assets/svelte.svg';
     import gameState from '../classes/gameState.svelte';
     import { findPrisoner, getRandomInArray } from '../utils';
@@ -32,12 +33,20 @@
         if (gameState.rocks >= p.levelUpCost) {
             gameState.rocks -= p.levelUpCost;
             level++;
+        } else {
+            toast.error('not enough money!', {
+                position: 'top-right',
+            });
         }
     }
     function levelAutoClickUp() {
         if (gameState.rocks >= p.autoClickCost) {
             gameState.rocks -= p.autoClickCost;
             autoClickLevel++;
+        } else {
+            toast.error('not enough money!', {
+                position: 'top-right',
+            });
         }
     }
 

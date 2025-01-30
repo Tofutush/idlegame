@@ -1,4 +1,5 @@
 <script lang="ts">
+    import toast from 'svelte-5-french-toast';
     import gameState from '../classes/gameState.svelte';
     import Modal from './Modal.svelte';
 
@@ -27,7 +28,9 @@
 
     function handleClick() {
         if (gameState.rocks <= 0) {
-            console.log('you have no rocks to sell!');
+            toast.error('You have no rocks to sell!', {
+                position: 'top-right',
+            });
         } else {
             showModal();
         }

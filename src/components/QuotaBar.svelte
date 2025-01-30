@@ -1,4 +1,5 @@
 <script>
+    import toast from 'svelte-5-french-toast';
     import gameState from '../classes/gameState.svelte';
     import QuotaMeter from './QuotaMeter.svelte';
 
@@ -7,6 +8,10 @@
             gameState.rocks -= gameState.quota;
             gameState.level++;
             gameState.quota = Math.round(gameState.quota * 1.5);
+        } else {
+            toast.error('Not enough rocks!', {
+                position: 'top-right',
+            });
         }
     }
 </script>
