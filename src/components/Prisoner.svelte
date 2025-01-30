@@ -1,7 +1,8 @@
 <script lang="ts">
     import svelteLogo from '../assets/svelte.svg';
     import gameState from '../classes/gameState.svelte';
-    import findPrisoner from '../utils/findPrisoner';
+    import { findPrisoner, getRandomInArray } from '../utils';
+    import SpeechBubble from './SpeechBubble.svelte';
 
     let { name } = $props();
 
@@ -11,6 +12,8 @@
     // state vars
     let level = $state(1);
     let autoClickLevel = $state(0);
+    let bubbleShown = $state(false);
+    let speech = $state('');
 
     // getters
     function getRocksPerClick(): number {
@@ -42,11 +45,24 @@
         gameState.rocks += getRocksPerSecond();
     }
     setInterval(autoDigRock, 1000);
+
+    function showSpeechBubble() {
+        if (bubbleShown !== true) {
+            speech = getRandomInArray(p.speech);
+            bubbleShown = true;
+            setTimeout(() => {
+                bubbleShown = false;
+            }, 3000);
+        }
+    }
 </script>
 
 <div class="prisoner">
     <p>{p.name}</p>
-    <img src={svelteLogo} alt="placeholder" />
+    <button onclick={showSpeechBubble}>
+        <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
+        <img src={svelteLogo} alt="placeholder" />
+    </button>
     <p>Level: {level}</p>
     <p>Auto click: {autoClickLevel}</p>
     <button onclick={digRock}>Dig</button>

@@ -1,4 +1,4 @@
-import type { CharacterProps } from "../types/types";
+import type { CharacterProps } from "../types";
 class Character {
     name: string;
     color: string;
