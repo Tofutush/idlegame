@@ -1,6 +1,6 @@
 <script>
-    import gameState from "../classes/gameState.svelte";
-    import QuotaMeter from "./QuotaMeter.svelte";
+    import gameState from '../classes/gameState.svelte';
+    import QuotaMeter from './QuotaMeter.svelte';
 
     function submit() {
         if (gameState.rocks >= gameState.quota) {

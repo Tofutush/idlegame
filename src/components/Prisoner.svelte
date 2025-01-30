@@ -1,7 +1,7 @@
 <script lang="ts">
-    import svelteLogo from "../assets/svelte.svg";
-    import gameState from "../classes/gameState.svelte";
-    import findPrisoner from "../utils/findPrisoner";
+    import svelteLogo from '../assets/svelte.svg';
+    import gameState from '../classes/gameState.svelte';
+    import findPrisoner from '../utils/findPrisoner';
 
     let { name } = $props();
 
@@ -51,7 +51,5 @@
     <p>Auto click: {autoClickLevel}</p>
     <button onclick={digRock}>Dig</button>
     <button onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
-    <button onclick={levelAutoClickUp}
-        >Stop slacking (cost: {p.autoClickCost})</button
-    >
+    <button onclick={levelAutoClickUp}>Stop slacking (cost: {p.autoClickCost})</button>
 </div>

@@ -1,7 +1,7 @@
 <script lang="ts">
-    import gameState from "../classes/gameState.svelte";
+    import gameState from '../classes/gameState.svelte';
     let progress = $derived(Math.min(gameState.rocks / gameState.quota, 1));
-    let filledQuotaWidth = $derived(progress * 500 + "px");
+    let filledQuotaWidth = $derived(progress * 500 + 'px');
 </script>
 
 <div class="quota-meter">
