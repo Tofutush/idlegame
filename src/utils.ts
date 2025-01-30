@@ -1,7 +1,7 @@
+import gameState from './classes/gameState.svelte';
 import prisonerList from './data/prisoners.json';
-import type { PrisonerProps } from './types';
 
-function findPrisoner(name: string): PrisonerProps {
+function findPrisoner(name: string) {
     for (let z = 0; z < prisonerList.length; z++) {
         if (prisonerList[z].name === name) {
             return prisonerList[z];
@@ -10,8 +10,17 @@ function findPrisoner(name: string): PrisonerProps {
     throw new Error(`prisoner ${name} not found`);
 }
 
+function getPrisonersList() {
+    return prisonerList.filter(p => gameState.prisoners.includes(p.name));
+}
+
+function getNotHavePrisonersList() {
+    return prisonerList.filter(p => !gameState.prisoners.includes(p.name));
+}
+
 function getRandomInArray(arr: Array<any>) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-export { findPrisoner, getRandomInArray };
+export { findPrisoner, getNotHavePrisonersList, getPrisonersList, getRandomInArray };
+
