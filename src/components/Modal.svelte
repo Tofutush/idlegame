@@ -19,8 +19,13 @@
         position: fixed;
         top: 0;
         left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .modal {
         background-color: #fff;
+        width: 800px;
+        height: 600px;
     }
 </style>
