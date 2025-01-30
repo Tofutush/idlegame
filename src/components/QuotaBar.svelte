@@ -6,7 +6,7 @@
         if (gameState.rocks >= gameState.quota) {
             gameState.rocks -= gameState.quota;
             gameState.level++;
-            gameState.quota *= 1.5;
+            gameState.quota = Math.round(gameState.quota * 1.5);
         }
     }
 </script>
