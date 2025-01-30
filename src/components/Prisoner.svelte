@@ -2,13 +2,10 @@
     import toast from 'svelte-5-french-toast';
     import svelteLogo from '../assets/svelte.svg';
     import gameState from '../classes/gameState.svelte';
-    import { findPrisoner, getRandomInArray } from '../utils';
+    import { getRandomInArray } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
 
-    let { name } = $props();
-
-    // find the character
-    let p = findPrisoner(name);
+    let { p } = $props();
 
     // state vars
     let level = $state(1);

@@ -4,7 +4,7 @@
 
 {#if show}
     <div class="modal-bg">
-        <div class="modal" style="width: {width}px; height: {height}px">
+        <div class="modal" style="max-width: {width}px; max-height: {height}px">
             <button onclick={hide}>x</button>
             {@render children()}
         </div>

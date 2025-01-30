@@ -3,7 +3,7 @@
     import BountyButton from './components/BountyButton.svelte';
     import BuckCount from './components/BuckCount.svelte';
     import BuckExchange from './components/BuckExchange.svelte';
-    import Prisoner from './components/Prisoner.svelte';
+    import HasPrisoners from './components/HasPrisoners.svelte';
     import QuotaBar from './components/QuotaBar.svelte';
     import RockCount from './components/RockCount.svelte';
 </script>
@@ -15,8 +15,7 @@
     <BuckExchange />
     <QuotaBar />
     <BountyButton />
-    <Prisoner name="Tomato" />
-    <Prisoner name="Tephra" />
+    <HasPrisoners />
 </main>
 
 <style>
