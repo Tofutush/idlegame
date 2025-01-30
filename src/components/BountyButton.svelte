@@ -1,11 +1,14 @@
 <script lang="ts">
+    import gameState from '../classes/gameState.svelte';
     import BountyList from './BountyList.svelte';
     import Modal from './Modal.svelte';
+    import toast from 'svelte-5-french-toast';
 
     let modalShown = $state(false);
 
     function showModal() {
-        modalShown = true;
+        if (gameState.bucks > 0) modalShown = true;
+        else toast.error("You have no bucks! You can't afford it!");
     }
 
     function hideModal() {
