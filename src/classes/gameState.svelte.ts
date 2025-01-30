@@ -6,7 +6,7 @@ interface GameState {
     bucks: number;
     level: number;
     quota: number;
-    prisoners: Array<Prisoner>;
+    prisoners: Array<string>;
     guards: number;
 }
 let gameState: GameState = $state({
@@ -14,7 +14,7 @@ let gameState: GameState = $state({
     bucks: 0,
     level: 1,
     quota: 100,
-    prisoners: [new Prisoner(findPrisoner('Tomato'))],
+    prisoners: ['Tomato'],
     guards: 0
 });
 export default gameState;
