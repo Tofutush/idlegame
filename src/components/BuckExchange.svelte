@@ -1,11 +1,16 @@
 <script>
     import gameState from "../classes/gameState.svelte";
     import Modal from "./Modal.svelte";
-    let modalShown = false;
+    let modalShown = $state(false);
+
+    let amountToSell = $state(0);
 
     function sellRocks() {
-        gameState.bucks += gameState.rocks;
-        gameState.rocks = 0;
+        if (gameState.rocks >= amountToSell) {
+            gameState.bucks += amountToSell;
+            gameState.rocks -= amountToSell;
+        }
+        hideModal();
     }
 
     function showModal() {
@@ -23,4 +28,12 @@
 
 <Modal show={modalShown} hide={hideModal}>
     <p>Sell rocks!</p>
+    <input
+        type="range"
+        bind:value={amountToSell}
+        min="0"
+        max={gameState.rocks}
+    />
+    <p>Exchange {amountToSell} rocks for {amountToSell} bucks</p>
+    <button onclick={sellRocks}>Sell!</button>
 </Modal>
