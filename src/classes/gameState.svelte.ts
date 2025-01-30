@@ -1,6 +1,3 @@
-import { findPrisoner } from "../utils";
-import Prisoner from "./Prisoner";
-
 interface GameState {
     rocks: number;
     bucks: number;
