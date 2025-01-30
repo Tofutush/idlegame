@@ -1,8 +1,7 @@
 <script lang="ts">
     import svelteLogo from '../assets/svelte.svg';
     import gameState from '../classes/gameState.svelte';
-    import findPrisoner from '../utils/findPrisoner';
-    import getRandomInArray from '../utils/getRandomInArray';
+    import { findPrisoner, getRandomInArray } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
 
     let { name } = $props();
