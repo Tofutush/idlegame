@@ -1,5 +1,5 @@
 import prisonerList from './data/prisoners.json';
-import type { PrisonerProps } from './types/types';
+import type { PrisonerProps } from './types';
 
 function findPrisoner(name: string): PrisonerProps {
     for (let z = 0; z < prisonerList.length; z++) {

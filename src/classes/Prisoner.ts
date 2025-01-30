@@ -1,4 +1,4 @@
-import type { PrisonerProps } from "../types/types";
+import type { PrisonerProps } from "../types";
 import Character from "./Character";
 
 class Prisoner extends Character {
