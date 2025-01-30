@@ -1,9 +1,12 @@
+import { findPrisoner } from "../utils";
+import Prisoner from "./Prisoner";
+
 interface GameState {
     rocks: number;
     bucks: number;
     level: number;
     quota: number;
-    prisoners: number;
+    prisoners: Array<Prisoner>;
     guards: number;
 }
 let gameState: GameState = $state({
@@ -11,7 +14,7 @@ let gameState: GameState = $state({
     bucks: 0,
     level: 1,
     quota: 100,
-    prisoners: 0,
+    prisoners: [new Prisoner(findPrisoner('Tomato'))],
     guards: 0
 });
 export default gameState;
