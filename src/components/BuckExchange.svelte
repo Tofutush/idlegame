@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
     import gameState from '../classes/gameState.svelte';
     import Modal from './Modal.svelte';
 
     let modalShown = $state(false);
     let amountToSell = $state(0);
-    let rocks = $state.snapshot(gameState.rocks);
+    // svelte-ignore non_reactive_update
+    let rocks: number;
 
     function sellRocks() {
         if (gameState.rocks >= amountToSell) {
@@ -15,6 +16,8 @@
     }
 
     function showModal() {
+        rocks = gameState.rocks;
+        amountToSell = 0;
         modalShown = true;
     }
 
