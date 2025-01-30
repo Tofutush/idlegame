@@ -1,4 +1,5 @@
 <script lang="ts">
+    import BountyList from './BountyList.svelte';
     import Modal from './Modal.svelte';
 
     let modalShown = $state(false);
@@ -16,4 +17,5 @@
 
 <Modal show={modalShown} hide={hideModal}>
     <h1>Catch prisoners</h1>
+    <BountyList />
 </Modal>
