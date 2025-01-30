@@ -1,10 +1,10 @@
 <script lang="ts">
-    let { show, hide, children } = $props();
+    let { show, hide, children, width = 800, height = 600 } = $props();
 </script>
 
 {#if show}
     <div class="modal-bg">
-        <div class="modal">
+        <div class="modal" style="width: {width}px; height: {height}px">
             <button onclick={hide}>x</button>
             {@render children()}
         </div>
@@ -25,7 +25,5 @@
     }
     .modal {
         background-color: #fff;
-        width: 800px;
-        height: 600px;
     }
 </style>
