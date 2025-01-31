@@ -26,6 +26,10 @@
         gameState.bucks -= bountyGiven;
         hideModal();
     }
+
+    function setMax() {
+        bountyGiven = maxBucks;
+    }
 </script>
 
 <div class="bounty">
@@ -38,5 +42,6 @@
     <p>{p.name} will definitely be caught if the bounty is {p.bounty}. But you can try a smaller amount and risk it!</p>
     <p>You're giving a bounty of {bountyGiven}. The chance is {Math.round(chance * 100)}%.</p>
     <input bind:value={bountyGiven} type="range" min="0" max={maxBucks} />
+    <button onclick={setMax}>Max</button>
     <button onclick={giveBounty}>Catch!</button>
 </Modal>

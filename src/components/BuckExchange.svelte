@@ -35,6 +35,10 @@
             showModal();
         }
     }
+
+    function setMax() {
+        amountToSell = rocks;
+    }
 </script>
 
 <div class="buck-exchange">
@@ -44,6 +48,7 @@
 <Modal show={modalShown} hide={hideModal}>
     <p>Sell rocks!</p>
     <input type="range" bind:value={amountToSell} min="0" max={rocks} />
+    <button onclick={setMax}>Max</button>
     <p>Exchange {amountToSell} rocks for {amountToSell} bucks</p>
     <button onclick={sellRocks}>Sell!</button>
 </Modal>
