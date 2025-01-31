@@ -23,8 +23,8 @@
         } else {
             toast.error(`You failed. ${p.name} escaped.`);
             p.bounty = Math.round(p.bounty * 1.2);
-            hideModal();
         }
+        hideModal();
     }
 </script>
 

@@ -2,7 +2,7 @@
     import { getPrisonersList } from '../utils';
     import Prisoner from './Prisoner.svelte';
 
-    let hasPrisoners = getPrisonersList();
+    let hasPrisoners = $derived(getPrisonersList());
 </script>
 
 <div class="has-prisoners">

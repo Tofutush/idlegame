@@ -11,14 +11,14 @@
         else toast.error("You have no bucks! You can't afford it!");
     }
 
-    function hideModal() {
+    export function hideBountyModal() {
         modalShown = false;
     }
 </script>
 
 <button onclick={showModal}>Catch prisoners!</button>
 
-<Modal show={modalShown} hide={hideModal}>
+<Modal show={modalShown} hide={hideBountyModal}>
     <h1>Catch prisoners</h1>
     <BountyList />
 </Modal>
