@@ -8,6 +8,7 @@ type PrisonerProps = CharacterProps & {
     efficiency: number,
     levelUpCost: number,
     autoClickCost: number,
+    speech: number,
     level?: number,
     autoClickLevel?: number
 };

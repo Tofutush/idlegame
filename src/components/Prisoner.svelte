@@ -54,6 +54,8 @@
 
     function showSpeechBubble() {
         if (bubbleShown !== true) {
+            console.log(p, p.speech);
+            
             speech = getRandomInArray(p.speech);
             bubbleShown = true;
             setTimeout(() => {

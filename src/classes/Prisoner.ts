@@ -8,12 +8,14 @@ class Prisoner extends Character {
     autoClickCost: number;
     level: number;
     autoClickLevel: number;
+    speech: Array<string>;
     constructor(props: PrisonerProps) {
         super(props);
         this.bounty = props.bounty;
         this.efficiency = props.efficiency;
         this.levelUpCost = props.levelUpCost;
         this.autoClickCost = props.autoClickCost;
+        this.speech = props.speech;
         this.level = props.level || 1;
         this.autoClickLevel = props.autoClickLevel || 0;
     }
