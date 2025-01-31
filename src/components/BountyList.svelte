@@ -6,7 +6,11 @@
 </script>
 
 <div class="bounty-list">
-    {#each notHadPrisoners as p}
-        <BountyOfOne {p} />
-    {/each}
+    {#if notHadPrisoners.length > 0}
+        {#each notHadPrisoners as p}
+            <BountyOfOne {p} />
+        {/each}
+    {:else}
+        <p>You caught them ALL!</p>
+    {/if}
 </div>
