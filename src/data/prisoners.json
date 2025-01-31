@@ -23,5 +23,20 @@
             "I will burn this place down.",
             "I'm so scared."
         ]
+    },
+    {
+        "name": "Sparky",
+        "color": "#00ccff",
+        "bounty": "99999",
+        "efficiency": 100,
+        "levelUpCost": 1000,
+        "autoClickCost": 5000,
+        "speech": [
+            "Motherfuckers! Y'all a bunch of motherfuckers!",
+            "I want some tofu.",
+            "I'm so hungry.",
+            "I don't deserve this.",
+            "I can kill all of you here single-handed."
+        ]
     }
 ]
