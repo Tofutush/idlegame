@@ -7,11 +7,13 @@
     let modalShown = $state(false);
     let bountyGiven = $state(0);
     let chance = $derived(bountyGiven / p.bounty);
-    let maxBucks = Math.min(p.bounty, gameState.bucks);
+    let maxBucks = $derived(Math.min(p.bounty, gameState.bucks));
 
     function showModal() {
-        bountyGiven = 0;
-        modalShown = true;
+        if (gameState.bucks > 0) {
+            bountyGiven = 0;
+            modalShown = true;
+        } else toast.error("You don't have enough money!");
     }
     function hideModal() {
         modalShown = false;
