@@ -2,7 +2,7 @@
     import { getNotHavePrisonersList } from '../utils';
     import BountyOfOne from './BountyOfOne.svelte';
 
-    let notHadPrisoners = getNotHavePrisonersList();
+    let notHadPrisoners = $derived(getNotHavePrisonersList());
 </script>
 
 <div class="bounty-list">
