@@ -11,7 +11,7 @@ let gameState: GameState = $state({
     bucks: 0,
     level: 1,
     quota: 100,
-    prisoners: ['Tomato'],
+    prisoners: ['Jerboa'],
     guards: 0
 });
 export default gameState;
