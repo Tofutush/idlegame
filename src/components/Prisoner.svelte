@@ -27,8 +27,8 @@
         gameState.rocks += getRocksPerClick();
     }
     function levelUp() {
-        if (gameState.rocks >= p.levelUpCost) {
-            gameState.rocks -= p.levelUpCost;
+        if (gameState.bucks >= p.levelUpCost) {
+            gameState.bucks -= p.levelUpCost;
             level++;
         } else {
             toast.error('not enough money!', {
@@ -37,8 +37,8 @@
         }
     }
     function levelAutoClickUp() {
-        if (gameState.rocks >= p.autoClickCost) {
-            gameState.rocks -= p.autoClickCost;
+        if (gameState.bucks >= p.autoClickCost) {
+            gameState.bucks -= p.autoClickCost;
             autoClickLevel++;
         } else {
             toast.error('not enough money!', {
