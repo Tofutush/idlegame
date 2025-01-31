@@ -52,28 +52,26 @@
     }
     setInterval(autoDigRock, 1000);
 
+    let bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
     function showSpeechBubble() {
-        if (bubbleShown !== true) {
-            console.log(p, p.speech);
-            
-            speech = getRandomInArray(p.speech);
-            bubbleShown = true;
-            setTimeout(() => {
-                bubbleShown = false;
-            }, 3000);
-        }
+        clearTimeout(bubbleTimeout);
+        speech = getRandomInArray(p.speech);
+        bubbleShown = true;
+        bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
     }
 </script>
 
 <div class="prisoner">
     <p>{p.name}</p>
-    <button onclick={showSpeechBubble}>
-        <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
-        <img src={svelteLogo} alt="placeholder" />
-    </button>
+    <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
+    <img src={svelteLogo} alt="placeholder" />
     <p>Level: {level}</p>
     <p>Auto click: {autoClickLevel}</p>
-    <button onclick={digRock}>Dig</button>
+    <button
+        onclick={() => {
+            digRock();
+            showSpeechBubble();
+        }}>Dig</button>
     <button onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
     <button onclick={levelAutoClickUp}>Stop slacking (cost: {p.autoClickCost})</button>
 </div>
