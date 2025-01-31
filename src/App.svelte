@@ -6,10 +6,12 @@
     import HasPrisoners from './components/HasPrisoners.svelte';
     import QuotaBar from './components/QuotaBar.svelte';
     import RockCount from './components/RockCount.svelte';
+    import InfoButton from './components/InfoButton.svelte';
 </script>
 
 <Toaster />
 <main>
+    <InfoButton />
     <BuckCount />
     <RockCount />
     <BuckExchange />
