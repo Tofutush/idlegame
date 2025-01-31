@@ -25,5 +25,7 @@
     }
     .modal {
         background-color: #fff;
+        min-width: 400px;
+        min-height: 300px;
     }
 </style>
