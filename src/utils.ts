@@ -22,5 +22,22 @@ function getRandomInArray(arr: Array<any>) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-export { findPrisoner, getNotHavePrisonersList, getPrisonersList, getRandomInArray };
+function calcHowManyBucks(n: number) {
+    return n * gameState.exchangeRate;
+}
+
+function exchangeRocks(n: number) {
+    n = Math.min(gameState.rocks, n);
+    gameState.rocks -= n;
+    gameState.bucks += calcHowManyBucks(n);
+}
+
+export {
+    findPrisoner,
+    getNotHavePrisonersList,
+    getPrisonersList,
+    getRandomInArray,
+    calcHowManyBucks,
+    exchangeRocks
+};
 
