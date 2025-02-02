@@ -16,8 +16,8 @@
             <BuckRockCount />
         </div>
         <QuotaBar />
-        <InfoButton />
     </header>
+    <div class="menu"><InfoButton /></div>
     <BuckExchange />
     <SellAllRocks />
     <BountyButton />
@@ -27,10 +27,15 @@
 <style>
     .header {
         display: flex;
-        justify-content: space-between;
+        gap: 24px;
         align-items: baseline;
     }
     .count {
         width: 240px;
+    }
+    .menu {
+        position: fixed;
+        top: 12px;
+        right: 12px;
     }
 </style>
