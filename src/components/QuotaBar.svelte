@@ -16,7 +16,7 @@
 </script>
 
 <div class="quota-bar">
-    <p>Camp level: {gameState.level}</p>
+    <div>Camp level: {gameState.level}</div>
     <QuotaMeter />
     <button class="clicky" onclick={submit}>Submit</button>
 </div>

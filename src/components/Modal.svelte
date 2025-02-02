@@ -29,10 +29,13 @@
         min-height: 300px;
         padding: 16px;
         border-radius: 12px;
+        overflow-y: auto;
     }
     .close-button {
         float: right;
         border: 0;
+        position: sticky;
+        top: 0;
     }
     .close-button:hover {
         background-color: #0001;
