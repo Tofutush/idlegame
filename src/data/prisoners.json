@@ -43,7 +43,7 @@
     {
         "name": "Sparky",
         "color": "#00ccff",
-        "bounty": "99999",
+        "bounty": 200,
         "efficiency": 100,
         "levelUpCost": 1000,
         "autoClickCost": 5000,
