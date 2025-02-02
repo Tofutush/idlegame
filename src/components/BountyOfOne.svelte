@@ -37,7 +37,7 @@
 <div class="bounty">
     <h3>{p.name}</h3>
     <p>Will 100% catch if bounty is {p.bounty} bucks.</p>
-    <button onclick={showModal}>Catch this fucker</button>
+    <button class="clicky" onclick={showModal}>Catch this fucker</button>
 </div>
 <Modal show={modalShown} hide={hideModal}>
     <h1>Catch {p.name}!</h1>
@@ -45,5 +45,5 @@
     <p>You're giving a bounty of {bountyGiven}. The chance is {Math.round(chance * 100)}%.</p>
     <input bind:value={bountyGiven} type="range" min="0" max={maxBucks} />
     <button onclick={setMax}>Max</button>
-    <button onclick={giveBounty}>Catch!</button>
+    <button class="clicky" onclick={giveBounty}>Catch!</button>
 </Modal>

@@ -16,7 +16,7 @@
     }
 </script>
 
-<button onclick={showModal}>Catch prisoners!</button>
+<button class="clicky" onclick={showModal}>Catch prisoners!</button>
 
 <Modal show={modalShown} hide={hideBountyModal}>
     <h1>Catch prisoners</h1>

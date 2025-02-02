@@ -68,10 +68,11 @@
     <p>Level: {level}</p>
     <p>Auto click: {autoClickLevel}</p>
     <button
+        class="clicky"
         onclick={() => {
             digRock();
             showSpeechBubble();
         }}>Dig</button>
-    <button onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
-    <button onclick={levelAutoClickUp}>Stop slacking (cost: {p.autoClickCost})</button>
+    <button class="clicky" onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
+    <button class="clicky" onclick={levelAutoClickUp}>Stop slacking (cost: {p.autoClickCost})</button>
 </div>

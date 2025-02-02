@@ -42,7 +42,7 @@
 </script>
 
 <div class="buck-exchange">
-    <button onclick={handleClick}>Sell rocks!</button>
+    <button class="clicky" onclick={handleClick}>Sell rocks!</button>
 </div>
 
 <Modal show={modalShown} hide={hideModal}>
@@ -50,5 +50,5 @@
     <input type="range" bind:value={amountToSell} min="0" max={rocks} />
     <button onclick={setMax}>Max</button>
     <p>Exchange {amountToSell} rocks for {amountToSell} bucks</p>
-    <button onclick={sellRocks}>Sell!</button>
+    <button class="clicky" onclick={sellRocks}>Sell!</button>
 </Modal>
