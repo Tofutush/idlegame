@@ -25,5 +25,7 @@
     .quota-bar {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        gap: 24px;
     }
 </style>

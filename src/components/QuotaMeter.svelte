@@ -1,22 +1,21 @@
 <script lang="ts">
     import gameState from '../classes/gameState.svelte';
-    let progress = $derived(Math.min(gameState.rocks / gameState.quota, 1));
-    let filledQuotaWidth = $derived(progress * 500 + 'px');
+    let progress = $derived(Math.min(gameState.rocks / gameState.quota, 1) * 100);
 </script>
 
-<div class="quota-meter">
-    <div class="filled-quota" style="width: {filledQuotaWidth}"></div>
+<div class="quota-meter" style="background: linear-gradient(to right, var(--c) {progress}%, transparent {progress}%);">
+    <div class="quota-progress">{gameState.rocks} / {gameState.quota}</div>
 </div>
-<div class="quota-progress">{gameState.rocks} / {gameState.quota}</div>
 
 <style>
     .quota-meter {
-        width: 500px;
-        height: 20px;
-        background-color: #0001;
-    }
-    .filled-quota {
-        height: 100%;
-        background-color: #0001;
+        width: 480px;
+        height: 48px;
+        border: 4px solid var(--c);
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>

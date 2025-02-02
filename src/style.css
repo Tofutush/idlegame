@@ -25,6 +25,7 @@ body {
   line-height: 1.5;
   background-color: var(--bg);
   color: var(--text);
+  user-select: none;
 }
 
 button {
@@ -35,7 +36,6 @@ button {
   padding: 6px 12px;
   font-family: var(--font);
   font-size: 24px;
-  user-select: none;
   width: fit-content;
   height: fit-content;
   background-color: var(--bg);
