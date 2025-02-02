@@ -14,7 +14,7 @@
     }
 </script>
 
-<button onclick={showModal}>{$_('menu')}</button>
+<button class="clicky little-square" onclick={showModal}>三</button>
 
 <Modal show={modalShown} hide={hideModal}>
     <InfoMenu />

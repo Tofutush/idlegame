@@ -5,7 +5,7 @@
 {#if show}
     <div class="modal-bg">
         <div class="modal" style="max-width: {width}px; max-height: {height}px">
-            <button onclick={hide}>x</button>
+            <button class="close-button little-square" onclick={hide}>x</button>
             {@render children()}
         </div>
     </div>
@@ -27,5 +27,14 @@
         background-color: var(--bg);
         min-width: 400px;
         min-height: 300px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+    .close-button {
+        float: right;
+        border: 0;
+    }
+    .close-button:hover {
+        background-color: #0001;
     }
 </style>

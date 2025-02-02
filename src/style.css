@@ -11,6 +11,7 @@
 :root {
   --text: #121212;
   --bg: #fff9f2;
+  --button: #dfd6ca;
   --c: #e56b6f;
   --font: Lexend, lxgw, sans-serif;
   text-rendering: optimizeLegibility;
@@ -27,26 +28,48 @@ body {
 }
 
 button {
-  border: 0;
+  border: 4px solid var(--c);
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--text);
   padding: 6px 12px;
   font-family: var(--font);
   font-size: 24px;
   user-select: none;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--bg);
 }
 
 .clicky {
-  background-color: gray;
-  color: #fff;
-  box-shadow: 0 5px #000;
+  box-shadow: 0 5px var(--c);
+}
+
+.clicky:hover {
+  box-shadow: 0 7px var(--c);
+  transform: translateY(-2px);
 }
 
 .clicky:active {
-  box-shadow: 0 0 #000;
+  box-shadow: 0 0 var(--c);
   transform: translateY(5px);
-  transition: all .1s;
+}
+
+.little-square {
+  aspect-ratio: 1;
 }
 
 ::selection {
   background-color: var(--text);
   color: var(--bg);
+}
+
+/* toaster. sorry but you made me. */
+
+.base {
+  box-shadow: none !important;
+  border: 4px solid var(--c) !important;
+  border-radius: 12px !important;
+  background: var(--bg) !important;
+  color: var(--text) !important;
 }

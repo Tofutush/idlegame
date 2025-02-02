@@ -1,6 +1,5 @@
 <script lang="ts">
     import { Toaster } from 'svelte-5-french-toast';
-    import { isLoading } from 'svelte-i18n';
     import BountyButton from './components/BountyButton.svelte';
     import BuckCount from './components/BuckCount.svelte';
     import BuckExchange from './components/BuckExchange.svelte';
@@ -13,12 +12,23 @@
 
 <Toaster />
 <main>
-    <InfoButton />
-    <BuckCount />
-    <RockCount />
+    <header class="header">
+        <div class="count">
+            <BuckCount />
+            <RockCount />
+        </div>
+        <QuotaBar />
+        <InfoButton />
+    </header>
     <BuckExchange />
     <SellAllRocks />
-    <QuotaBar />
     <BountyButton />
     <HasPrisoners />
 </main>
+
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>

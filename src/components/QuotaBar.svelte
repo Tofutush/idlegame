@@ -20,3 +20,10 @@
     <QuotaMeter />
     <button class="clicky" onclick={submit}>Submit</button>
 </div>
+
+<style>
+    .quota-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
