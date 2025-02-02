@@ -24,7 +24,7 @@
         align-items: center;
     }
     .modal {
-        background-color: #fff;
+        background-color: var(--bg);
         min-width: 400px;
         min-height: 300px;
     }
