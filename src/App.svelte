@@ -7,6 +7,7 @@
     import QuotaBar from './components/QuotaBar.svelte';
     import RockCount from './components/RockCount.svelte';
     import InfoButton from './components/InfoButton.svelte';
+    import SellAllRocks from './components/SellAllRocks.svelte';
 </script>
 
 <Toaster />
@@ -15,6 +16,7 @@
     <BuckCount />
     <RockCount />
     <BuckExchange />
+    <SellAllRocks />
     <QuotaBar />
     <BountyButton />
     <HasPrisoners />

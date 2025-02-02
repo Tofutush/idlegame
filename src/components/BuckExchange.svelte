@@ -2,15 +2,15 @@
     import toast from 'svelte-5-french-toast';
     import gameState from '../classes/gameState.svelte';
     import Modal from './Modal.svelte';
-    import { calcHowManyBucks, exchangeRocks } from '../utils';
+    import { calcHowManyBucks, sellRocks } from '../utils';
 
     let modalShown = $state(false);
     let amountToSell = $state(0);
     // svelte-ignore non_reactive_update
     let rocks: number;
 
-    function sellRocks() {
-        exchangeRocks(amountToSell);
+    function handleSellRocks() {
+        sellRocks(amountToSell);
         hideModal();
     }
 
@@ -46,5 +46,5 @@
     <input type="range" bind:value={amountToSell} min="0" max={rocks} />
     <button onclick={setMax}>Max</button>
     <p>Exchange {amountToSell} rocks for {calcHowManyBucks(amountToSell)} bucks</p>
-    <button class="clicky" onclick={sellRocks}>Sell!</button>
+    <button class="clicky" onclick={handleSellRocks}>Sell!</button>
 </Modal>

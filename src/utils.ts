@@ -26,7 +26,7 @@ function calcHowManyBucks(n: number) {
     return n * gameState.exchangeRate;
 }
 
-function exchangeRocks(n: number) {
+function sellRocks(n: number) {
     n = Math.min(gameState.rocks, n);
     gameState.rocks -= n;
     gameState.bucks += calcHowManyBucks(n);
@@ -38,6 +38,6 @@ export {
     getPrisonersList,
     getRandomInArray,
     calcHowManyBucks,
-    exchangeRocks
+    sellRocks
 };
 
