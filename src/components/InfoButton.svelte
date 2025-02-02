@@ -1,6 +1,7 @@
 <script lang="ts">
     import InfoMenu from './InfoMenu.svelte';
     import Modal from './Modal.svelte';
+    import { _ } from 'svelte-i18n';
 
     let modalShown = $state(false);
 
@@ -13,7 +14,7 @@
     }
 </script>
 
-<button onclick={showModal}>Menu</button>
+<button onclick={showModal}>{$_('menu')}</button>
 
 <Modal show={modalShown} hide={hideModal}>
     <InfoMenu />

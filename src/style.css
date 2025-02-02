@@ -30,6 +30,8 @@ button {
   border: 0;
   padding: 6px 12px;
   font-family: var(--font);
+  font-size: 24px;
+  user-select: none;
 }
 
 .clicky {

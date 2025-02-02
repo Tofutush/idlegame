@@ -1,3 +1,30 @@
 {
-    "notEnoughMoney": "You don't have enough money!"
+    "title": "Idle Forced Labor Camp, an Incremental Game",
+    "max": "Max",
+    "menu": "Menu",
+    "about": "About",
+    "credits": "Credits",
+    "notEnoughMoney": "You don't have enough money!",
+    "notEnoughRocks": "You don't have enough rocks!",
+    "sellRocks": "Sell rocks!",
+    "sellRocksDesc": "Sell {r} rocks for {b} bucks.",
+    "catchPrisoners": "Catch prisoners!",
+    "caughtThemAll": "You caught them ALL!",
+    "caughtPrisoner": "You caught {name}!",
+    "escapedPrisoner": "You failed. {name} escaped.",
+    "100catchBounty": "Will definitely be caught if the bounty is ฿{b}.",
+    "name100catchBounty": "{name} will definitely be caught if the bounty is ฿{b}. But you can try a smaller bounty and risk it!",
+    "catchThis": "Catch this fucker!",
+    "catchTitle": "Catch {name}!",
+    "bountyAmount": "You're giving a bounty of ฿{b}. The chance of catching is {chance}%.",
+    "names": {
+        "Jerboa": "Jerboa",
+        "Tomato": "Tomato",
+        "Tephra": "Tephra",
+        "Sparky": "Sparky"
+    },
+    "aboutText": {
+        "1": "Dig rocks. Sell them into bucks. Fulfill quotas from above. Catch more prisoners and make them work night and day. Hire guards. Grow your camp. Truly the Bauhinian experience.",
+        "2": "may sound hellish, but thats what im going for"
+    }
 }

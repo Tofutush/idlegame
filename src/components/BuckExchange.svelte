@@ -3,6 +3,7 @@
     import gameState from '../classes/gameState.svelte';
     import Modal from './Modal.svelte';
     import { calcHowManyBucks, sellRocks } from '../utils';
+    import { _ } from 'svelte-i18n';
 
     let modalShown = $state(false);
     let amountToSell = $state(0);
@@ -26,7 +27,7 @@
 
     function handleClick() {
         if (gameState.rocks <= 0) {
-            toast.error('You have no rocks to sell!');
+            toast.error($_('notEnoughRocks'));
         } else {
             showModal();
         }
@@ -38,13 +39,20 @@
 </script>
 
 <div class="buck-exchange">
-    <button class="clicky" onclick={handleClick}>Sell rocks!</button>
+    <button class="clicky" onclick={handleClick}>{$_('sellRocks')}</button>
 </div>
 
 <Modal show={modalShown} hide={hideModal}>
-    <p>Sell rocks!</p>
+    <p>{$_('sellRocks')}</p>
     <input type="range" bind:value={amountToSell} min="0" max={rocks} />
-    <button onclick={setMax}>Max</button>
-    <p>Exchange {amountToSell} rocks for {calcHowManyBucks(amountToSell)} bucks</p>
-    <button class="clicky" onclick={handleSellRocks}>Sell!</button>
+    <button onclick={setMax}>{$_('max')}</button>
+    <p>
+        {$_('sellRocksDesc', {
+            values: {
+                r: amountToSell,
+                b: calcHowManyBucks(amountToSell),
+            },
+        })}
+    </p>
+    <button class="clicky" onclick={handleSellRocks}>{$_('sellRocks')}</button>
 </Modal>
