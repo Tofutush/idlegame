@@ -1,5 +1,6 @@
 <script lang="ts">
     import Modal from './Modal.svelte';
+    import SwitchLocale from './SwitchLocale.svelte';
 
     let aboutModal = $state(false);
     function openAbout() {
@@ -20,6 +21,7 @@
 
 <button onclick={openAbout}>About</button>
 <button onclick={openCredit}>Credits</button>
+<SwitchLocale />
 <Modal show={aboutModal} hide={hideAbout}>
     <h1>About</h1>
     <h2>Idle Forced Labor Camp, an Incremental Game</h2>
