@@ -7,5 +7,5 @@ addMessages('zh', zh);
 
 init({
     fallbackLocale: 'en',
-    initialLocale: getLocaleFromNavigator()
+    initialLocale: 'en'
 });
