@@ -12,17 +12,24 @@
   --text: #121212;
   --bg: #fff9f2;
   --c: #e56b6f;
-  font-family: Lexend, lxgw, sans-serif;
-  font-size: 24px;
-  line-height: 1.5;
+  --font: Lexend, lxgw, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: var(--font);
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 button {
   border: 0;
   padding: 6px 12px;
+  font-family: var(--font);
 }
 
 .clicky {
@@ -35,4 +42,9 @@ button {
   box-shadow: 0 0 #000;
   transform: translateY(5px);
   transition: all .1s;
+}
+
+::selection {
+  background-color: var(--text);
+  color: var(--bg);
 }
