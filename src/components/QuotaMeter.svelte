@@ -10,7 +10,6 @@
 <style>
     .quota-meter {
         width: 480px;
-        height: 48px;
         border: 4px solid var(--c);
         border-radius: 12px;
         overflow: hidden;
