@@ -3,5 +3,5 @@
 </script>
 
 <div class="buck-count">
-    <p>Bucks: {gameState.bucks}</p>
+    <p>฿{gameState.bucks}</p>
 </div>

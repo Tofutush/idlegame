@@ -1,3 +1,30 @@
 {
-    "notEnoughMoney": "你钱不够！"
+    "title": "放置苦劳营模拟器",
+    "max": "放满",
+    "menu": "菜单",
+    "about": "关于",
+    "credits": "鸣谢",
+    "notEnoughMoney": "你钱不够！",
+    "notEnoughRocks": "你石头不够！",
+    "sellRocks": "卖石头！",
+    "sellRocksDesc": "把 {r} 块石头卖 {b} 元钱。",
+    "catchPrisoners": "抓囚犯！",
+    "caughtThemAll": "全抓完啦！",
+    "caughtPrisoner": "你把{name}抓着啦！",
+    "escapedPrisoner": "失败，{name}跑了。",
+    "100catchBounty": "要是赏金有 {b}฿，就肯定能抓着。",
+    "name100catchBounty": "要是赏金有 {b}฿，就肯定能抓着{name}。但你可以给小一点的赏金，当把赌狗！",
+    "catchThis": "抓这家伙！",
+    "catchTitle": "抓{name}！",
+    "bountyAmount": "你出了 ฿{b} 的赏金。抓住的几率有 {chance}%。",
+    "names": {
+        "Jerboa": "跳鼠",
+        "Tomato": "番茄",
+        "Tephra": "火山灰",
+        "Sparky": "闪闪"
+    },
+    "aboutText": {
+        "1": "挖石头，卖钱，冲业绩，抓人进来没日没夜地干活，招聘狱警，把营地做大做强。太紫荆了这也。",
+        "2": "可能听起来有点地狱，但主打的就是一个地狱。"
+    }
 }

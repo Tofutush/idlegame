@@ -17,9 +17,9 @@
     }
 </script>
 
-<button class="clicky" onclick={showModal}>Catch prisoners!</button>
+<button class="clicky" onclick={showModal}>{$_('catchPrisoners')}</button>
 
 <Modal show={modalShown} hide={hideBountyModal}>
-    <h1>Catch prisoners</h1>
+    <h1>{$_('catchPrisoners')}</h1>
     <BountyList />
 </Modal>
