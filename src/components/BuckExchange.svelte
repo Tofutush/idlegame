@@ -28,9 +28,7 @@
 
     function handleClick() {
         if (gameState.rocks <= 0) {
-            toast.error('You have no rocks to sell!', {
-                position: 'top-right',
-            });
+            toast.error('You have no rocks to sell!');
         } else {
             showModal();
         }

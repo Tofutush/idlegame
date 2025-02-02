@@ -31,9 +31,7 @@
             gameState.bucks -= p.levelUpCost;
             level++;
         } else {
-            toast.error('Not enough money!', {
-                position: 'top-right',
-            });
+            toast.error('Not enough money!');
         }
     }
     function levelAutoClickUp() {
@@ -41,9 +39,7 @@
             gameState.bucks -= p.autoClickCost;
             autoClickLevel++;
         } else {
-            toast.error('Not enough money!', {
-                position: 'top-right',
-            });
+            toast.error('Not enough money!');
         }
     }
 
