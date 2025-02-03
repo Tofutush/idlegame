@@ -24,8 +24,10 @@
         </div>
     </header>
     <div class="menu"><InfoButton /></div>
-    <BountyButton />
     <HasPrisoners />
+    <div class="bottom">
+        <BountyButton />
+    </div>
 </main>
 
 <style>
@@ -51,5 +53,10 @@
         position: fixed;
         top: 12px;
         right: 12px;
+    }
+    .bottom {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
     }
 </style>

@@ -30,6 +30,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   user-select: none;
+  scrollbar-color: #e56b6f transparent;
 }
 
 button {
