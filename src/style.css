@@ -17,6 +17,7 @@
   --yellow: #fff3aa;
   --blue: #b7efff;
   --purple: #d9d1ff;
+  --gray: #888;
   --font: Lexend, lxgw, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -73,7 +74,7 @@ button {
 
 .base {
   box-shadow: none !important;
-  border: 4px solid var(--c) !important;
+  border: 4px solid var(--red) !important;
   border-radius: 12px !important;
   background: var(--bg) !important;
   color: var(--text) !important;
