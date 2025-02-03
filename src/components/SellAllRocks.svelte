@@ -9,4 +9,4 @@
     }
 </script>
 
-<button onclick={sellAll}>Sell all rocks!</button>
+<button class="clicky" onclick={sellAll}>Sell all rocks!</button>
