@@ -1,12 +1,12 @@
 <script lang="ts">
     import { Toaster } from 'svelte-5-french-toast';
     import BountyButton from './components/BountyButton.svelte';
-    import BuckExchange from './components/BuckExchange.svelte';
     import BuckRockCount from './components/BuckRockCount.svelte';
     import HasPrisoners from './components/HasPrisoners.svelte';
     import InfoButton from './components/InfoButton.svelte';
     import QuotaBar from './components/QuotaBar.svelte';
     import SellAllRocks from './components/SellAllRocks.svelte';
+    import SellRocks from './components/SellRocks.svelte';
 </script>
 
 <Toaster />
@@ -15,11 +15,15 @@
         <div class="count">
             <BuckRockCount />
         </div>
-        <QuotaBar />
+        <div class="middle">
+            <QuotaBar />
+            <div class="rock-buttons">
+                <SellRocks />
+                <SellAllRocks />
+            </div>
+        </div>
     </header>
     <div class="menu"><InfoButton /></div>
-    <BuckExchange />
-    <SellAllRocks />
     <BountyButton />
     <HasPrisoners />
 </main>
@@ -28,10 +32,20 @@
     .header {
         display: flex;
         gap: 24px;
-        align-items: baseline;
+        align-items: stretch;
     }
     .count {
         width: 240px;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+    .rock-buttons {
+        display: flex;
+        gap: 12px;
     }
     .menu {
         position: fixed;
