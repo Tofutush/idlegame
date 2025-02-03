@@ -11,8 +11,12 @@
 :root {
   --text: #121212;
   --bg: #fff9f2;
-  --button: #dfd6ca;
   --c: #e56b6f;
+  --red: #ffb1b1;
+  --orange: #ffd0a8;
+  --yellow: #fff3aa;
+  --blue: #b7efff;
+  --purple: #d9d1ff;
   --font: Lexend, lxgw, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -35,7 +39,7 @@ button {
   color: var(--text);
   padding: 6px 12px;
   font-family: var(--font);
-  font-size: 24px;
+  font-size: 16px;
   width: fit-content;
   height: fit-content;
   background-color: var(--bg);
