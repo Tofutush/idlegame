@@ -7,10 +7,8 @@ type PrisonerProps = CharacterProps & {
     bounty: number,
     efficiency: number,
     levelUpCost: number,
-    autoClickCost: number,
     speech: number,
-    level?: number,
-    autoClickLevel?: number
+    level?: number
 };
 type GuardProps = CharacterProps & {
     salary: number

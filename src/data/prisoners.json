@@ -5,7 +5,6 @@
         "bounty": 0,
         "efficiency": 1,
         "levelUpCost": 5,
-        "autoClickCost": 10,
         "speech": [
             "I deserve this.",
             "My punishment is justified.",
@@ -19,7 +18,6 @@
         "bounty": 50,
         "efficiency": 2,
         "levelUpCost": 10,
-        "autoClickCost": 20,
         "speech": [
             "I want to die.",
             "Why does everyone make me work?"
@@ -32,7 +30,6 @@
         "bounty": 100,
         "efficiency": 3,
         "levelUpCost": 30,
-        "autoClickCost": 50,
         "speech": [
             "This camp is going down with me.",
             "I will burn this place down.",
@@ -46,7 +43,6 @@
         "bounty": 200,
         "efficiency": 100,
         "levelUpCost": 1000,
-        "autoClickCost": 5000,
         "speech": [
             "Motherfuckers! Y'all a bunch of motherfuckers!",
             "I want some tofu.",
