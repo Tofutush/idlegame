@@ -15,7 +15,7 @@
     .has-prisoners {
         display: flex;
         gap: 24px;
-        width: 100%;
+        max-width: 100%;
         overflow-x: auto;
         padding: 12px 0;
     }
