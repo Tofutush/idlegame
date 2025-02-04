@@ -7,6 +7,16 @@
 
 <div class="has-prisoners">
     {#each hasPrisoners as p}
-        <Prisoner p={p} />
+        <Prisoner {p} />
     {/each}
 </div>
+
+<style>
+    .has-prisoners {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        overflow-x: auto;
+        padding: 12px 0;
+    }
+</style>
