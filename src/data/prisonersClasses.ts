@@ -1,4 +1,4 @@
-import Prisoner from "../classes/Prisoner";
+import Prisoner from "../classes/Prisoner.svelte";
 import type { PrisonerProps } from "../types";
 import prisonerList from './prisoners.json';
 

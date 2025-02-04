@@ -4,7 +4,7 @@
     import gameState from '../classes/gameState.svelte';
     import { getRandomInArray } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
-    import type Prisoner from '../classes/Prisoner';
+    import type Prisoner from '../classes/Prisoner.svelte';
 
     let { p }: { p: Prisoner } = $props();
 
