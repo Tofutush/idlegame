@@ -1,7 +1,7 @@
 <script lang="ts">
     import toast from 'svelte-5-french-toast';
-    import imgDig from '../assets/prisoner placeholder dig.png';
-    import img from '../assets/prisoner placeholder.png';
+    import imgDig from '../assets/jerboa dig.png';
+    import img from '../assets/jerboa idle.png';
     import gameState from '../classes/gameState.svelte';
     import type Prisoner from '../classes/Prisoner.svelte';
     import { getRandomInArrayExcept } from '../utils';
