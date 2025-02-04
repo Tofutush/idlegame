@@ -2,7 +2,7 @@
     import toast from 'svelte-5-french-toast';
     import svelteLogo from '../assets/svelte.svg';
     import gameState from '../classes/gameState.svelte';
-    import { getRandomInArray } from '../utils';
+    import { getRandomInArray, getRandomInArrayExcept } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
     import type Prisoner from '../classes/Prisoner.svelte';
 
@@ -11,6 +11,7 @@
     // state vars
     let bubbleShown = $state(false);
     let speech = $state('');
+    let lastSpeech = $state('');
 
     // events
     function levelUp() {
@@ -35,7 +36,7 @@
     let bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
     function showSpeechBubble() {
         clearTimeout(bubbleTimeout);
-        speech = getRandomInArray(p.speech);
+        speech = lastSpeech = getRandomInArrayExcept(p.speech, [lastSpeech]);
         bubbleShown = true;
         bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
     }

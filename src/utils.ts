@@ -22,6 +22,15 @@ function getRandomInArray(arr: Array<any>) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function getRandomInArrayExcept(arr: Array<any>, except: Array<any>) {
+    // except should be an array of VALUES
+    let chosen;
+    do {
+        chosen = arr[Math.floor(Math.random() * arr.length)];
+    } while (except.includes(chosen));
+    return chosen;
+}
+
 function calcHowManyBucks(n: number) {
     return n * gameState.exchangeRate;
 }
@@ -37,6 +46,7 @@ export {
     getNotHavePrisonersList,
     getPrisonersList,
     getRandomInArray,
+    getRandomInArrayExcept,
     calcHowManyBucks,
     sellRocks
 };
