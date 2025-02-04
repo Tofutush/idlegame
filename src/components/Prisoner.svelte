@@ -5,6 +5,8 @@
     import { getRandomInArray, getRandomInArrayExcept } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
     import type Prisoner from '../classes/Prisoner.svelte';
+    import img from '../assets/prisoner placeholder.png';
+    import imgDig from '../assets/prisoner placeholder dig.png';
 
     let { p }: { p: Prisoner } = $props();
 
@@ -12,6 +14,7 @@
     let bubbleShown = $state(false);
     let speech = $state('');
     let lastSpeech = $state('');
+    let image = $state(img);
 
     // events
     function levelUp() {
@@ -45,7 +48,7 @@
 <div class="prisoner">
     <p>{p.name}</p>
     <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
-    <img src={svelteLogo} alt="placeholder" />
+    <img src={image} alt="placeholder" style="height: 200px" />
     <p>Level: {p.level}</p>
     <button class="clicky" onclick={digRock}>Dig</button>
     <button class="clicky" onclick={levelUp}>Level Up (cost: {p.getLevelUpCost()})</button>
