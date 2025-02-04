@@ -1,5 +1,12 @@
-import type { PrisonerProps } from "../types";
+import type { CharacterProps } from "../types";
 import Character from "./Character";
+
+type PrisonerProps = CharacterProps & {
+    bounty: number,
+    efficiency: number,
+    levelUpCost: number,
+    level: number
+}
 
 class Prisoner extends Character {
     bounty = $state<number>(0);
@@ -13,13 +20,16 @@ class Prisoner extends Character {
         this.efficiency = props.efficiency;
         this.levelUpCost = props.levelUpCost;
         this.speech = props.speech;
-        this.level = props.level || 0;
+        this.level = props.level;
     }
-    getAmountRocksPerSecond(): number {
+    getAmountRocksPerSecond() {
         return this.efficiency * this.level;
     }
-    levelUp(): void {
+    levelUp() {
         this.level++;
+    }
+    getLevelUpCost() {
+        return Math.round(this.levelUpCost * Math.pow(1.07, this.level - 1));
     }
 }
 

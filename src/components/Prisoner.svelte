@@ -15,8 +15,8 @@
 
     // events
     function levelUp() {
-        if (gameState.bucks >= p.levelUpCost) {
-            gameState.bucks -= p.levelUpCost;
+        if (gameState.bucks >= p.getLevelUpCost()) {
+            gameState.bucks -= p.getLevelUpCost();
             p.levelUp();
         } else {
             toast.error('Not enough money!');
@@ -48,5 +48,5 @@
     <img src={svelteLogo} alt="placeholder" />
     <p>Level: {p.level}</p>
     <button class="clicky" onclick={digRock}>Dig</button>
-    <button class="clicky" onclick={levelUp}>Level Up (cost: {p.levelUpCost})</button>
+    <button class="clicky" onclick={levelUp}>Level Up (cost: {p.getLevelUpCost()})</button>
 </div>
