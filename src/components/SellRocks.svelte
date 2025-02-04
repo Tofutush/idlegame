@@ -56,3 +56,9 @@
     </p>
     <button class="clicky" onclick={handleSellRocks}>{$_('sellRocks')}</button>
 </Modal>
+
+<style>
+    button {
+        --c: var(--red);
+    }
+</style>

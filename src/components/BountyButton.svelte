@@ -23,3 +23,9 @@
     <h1>{$_('catchPrisoners')}</h1>
     <BountyList />
 </Modal>
+
+<style>
+    button {
+        --c: var(--yellow);
+    }
+</style>

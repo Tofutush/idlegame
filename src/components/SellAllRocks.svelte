@@ -10,3 +10,9 @@
 </script>
 
 <button class="clicky" onclick={sellAll}>Sell all rocks!</button>
+
+<style>
+    button {
+        --c: var(--orange);
+    }
+</style>
