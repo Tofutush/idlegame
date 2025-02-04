@@ -17,17 +17,15 @@
         </div>
         <div class="middle">
             <QuotaBar />
-            <div class="rock-buttons">
+            <div class="buttons">
                 <SellRocks />
                 <SellAllRocks />
+                <BountyButton />
             </div>
         </div>
     </header>
     <div class="menu"><InfoButton /></div>
     <HasPrisoners />
-    <div class="bottom">
-        <BountyButton />
-    </div>
 </main>
 
 <style>
@@ -45,7 +43,7 @@
         justify-content: space-between;
         padding: 16px 0;
     }
-    .rock-buttons {
+    .buttons {
         display: flex;
         gap: 12px;
     }
@@ -53,10 +51,5 @@
         position: fixed;
         top: 12px;
         right: 12px;
-    }
-    .bottom {
-        display: flex;
-        gap: 24px;
-        justify-content: center;
     }
 </style>
