@@ -1,7 +1,7 @@
 <script lang="ts">
+    import { _ } from 'svelte-i18n';
     import Modal from './Modal.svelte';
     import SwitchLocale from './SwitchLocale.svelte';
-    import { _ } from 'svelte-i18n';
 
     let aboutModal = $state(false);
     function openAbout() {

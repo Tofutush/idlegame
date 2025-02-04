@@ -1,7 +1,7 @@
 <script lang="ts">
+    import { _ } from 'svelte-i18n';
     import { getNotHavePrisonersList } from '../utils';
     import BountyOfOne from './BountyOfOne.svelte';
-    import { _ } from 'svelte-i18n';
 
     let notHadPrisoners = $derived(getNotHavePrisonersList());
 </script>

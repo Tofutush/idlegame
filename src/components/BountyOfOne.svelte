@@ -1,8 +1,8 @@
 <script lang="ts">
-    import gameState from '../classes/gameState.svelte';
-    import Modal from './Modal.svelte';
     import toast from 'svelte-5-french-toast';
     import { _ } from 'svelte-i18n';
+    import gameState from '../classes/gameState.svelte';
+    import Modal from './Modal.svelte';
 
     let { p } = $props();
     let modalShown = $state(false);

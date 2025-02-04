@@ -1,9 +1,9 @@
 <script lang="ts">
     import toast from 'svelte-5-french-toast';
-    import gameState from '../classes/gameState.svelte';
-    import Modal from './Modal.svelte';
-    import { calcHowManyBucks, sellRocks } from '../utils';
     import { _ } from 'svelte-i18n';
+    import gameState from '../classes/gameState.svelte';
+    import { calcHowManyBucks, sellRocks } from '../utils';
+    import Modal from './Modal.svelte';
 
     let modalShown = $state(false);
     let amountToSell = $state(0);

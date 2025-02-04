@@ -1,12 +1,11 @@
 <script lang="ts">
     import toast from 'svelte-5-french-toast';
-    import svelteLogo from '../assets/svelte.svg';
-    import gameState from '../classes/gameState.svelte';
-    import { getRandomInArray, getRandomInArrayExcept } from '../utils';
-    import SpeechBubble from './SpeechBubble.svelte';
-    import type Prisoner from '../classes/Prisoner.svelte';
-    import img from '../assets/prisoner placeholder.png';
     import imgDig from '../assets/prisoner placeholder dig.png';
+    import img from '../assets/prisoner placeholder.png';
+    import gameState from '../classes/gameState.svelte';
+    import type Prisoner from '../classes/Prisoner.svelte';
+    import { getRandomInArrayExcept } from '../utils';
+    import SpeechBubble from './SpeechBubble.svelte';
 
     let { p }: { p: Prisoner } = $props();
 

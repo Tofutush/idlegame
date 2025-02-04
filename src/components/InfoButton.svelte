@@ -1,7 +1,6 @@
 <script lang="ts">
     import InfoMenu from './InfoMenu.svelte';
     import Modal from './Modal.svelte';
-    import { _ } from 'svelte-i18n';
 
     let modalShown = $state(false);
 
