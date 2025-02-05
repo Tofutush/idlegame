@@ -73,7 +73,7 @@
         clearTimeout(bubbleTimeout);
         speech = lastSpeech = getRandomInArrayExcept(p.speech, [lastSpeech]);
         bubbleShown = true;
-        // bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
+        bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
     }
 </script>
 
