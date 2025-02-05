@@ -1,3 +1,4 @@
+// wow. i guess this is what they call. a SINGLETON
 class GameState {
     rocks = $state(0);
     bucks = $state(0);
@@ -6,7 +7,7 @@ class GameState {
     prisoners = $state(['Jerboa']);
     guards = $state([]);
     getQuota() {
-        return 100 * Math.pow(1.5, this.level - 1);
+        return Math.round(100 * Math.pow(1.5, this.level - 1));
     }
 }
 let gameState = new GameState();
