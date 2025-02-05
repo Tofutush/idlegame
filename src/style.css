@@ -32,6 +32,7 @@ body {
   color: var(--text);
   user-select: none;
   scrollbar-color: #e56b6f transparent;
+  margin: 0;
 }
 
 button {
@@ -45,6 +46,7 @@ button {
   width: fit-content;
   height: fit-content;
   background-color: var(--bg);
+  white-space: nowrap;
 }
 
 .clicky {
