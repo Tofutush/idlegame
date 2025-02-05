@@ -7,6 +7,7 @@
     import QuotaBar from './components/QuotaBar.svelte';
     import SellAllRocks from './components/SellAllRocks.svelte';
     import SellRocks from './components/SellRocks.svelte';
+    import StoryButton from './components/StoryButton.svelte';
 </script>
 
 <Toaster />
@@ -21,6 +22,7 @@
                 <SellRocks />
                 <SellAllRocks />
                 <BountyButton />
+                <StoryButton />
             </div>
         </div>
     </header>
