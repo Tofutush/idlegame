@@ -13,7 +13,7 @@
     "caughtPrisoner": "You caught {name}!",
     "escapedPrisoner": "You failed. {name} escaped.",
     "100catchBounty": "Will definitely be caught if the bounty is ฿{b}.",
-    "name100catchBounty": "{name} will definitely be caught if the bounty is ฿{b}. But you can try a smaller bounty and risk it!",
+    "name100catchBounty": "<span style=\"{color}\">{name}</span> will definitely be caught if the bounty is ฿{b}. But you can try a smaller bounty and risk it!",
     "catchThis": "Catch this fucker!",
     "catchTitle": "Catch {name}!",
     "bountyAmount": "You're giving a bounty of ฿{b}. The chance of catching is {chance}%.",

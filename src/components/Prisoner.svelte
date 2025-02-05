@@ -78,7 +78,7 @@
 </script>
 
 <div class="prisoner">
-    <p>{p.name}</p>
+    <p style="color: {p.color}">{p.name}</p>
     <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
     {#if imgLoaded && imgDigLoaded}
         <img src={isDigging ? imgDig : img} alt={p.name} style="height: 200px" />

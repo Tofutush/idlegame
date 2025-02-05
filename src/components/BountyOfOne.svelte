@@ -46,7 +46,7 @@
 </script>
 
 <div class="bounty">
-    <h3>{$_('names.' + p.name)}</h3>
+    <h3 style="color: {p.color}">{$_('names.' + p.name)}</h3>
     <p>
         {$_('100catchBounty', {
             values: { b: p.bounty },
@@ -55,19 +55,8 @@
     <button class="clicky" onclick={showModal}>{$_('catchThis')}</button>
 </div>
 <Modal show={modalShown} hide={hideModal}>
-    <h1>
-        {$_('catchTitle', {
-            values: { name: $_('names.' + p.name) },
-        })}
-    </h1>
-    <p>
-        {$_('name100catchBounty', {
-            values: {
-                name: $_('names.' + p.name),
-                b: p.bounty,
-            },
-        })}
-    </p>
+    <h1>Catch <span style="color: {p.color}">{p.name}</span></h1>
+    <p><span style="color: {p.color}">{p.name}</span> will definitely be caught if the bounty is ฿{p.bounty}. But you can try a smaller bounty and risk it!</p>
     <p>
         {$_('bountyAmount', {
             values: {
