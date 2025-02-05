@@ -39,7 +39,6 @@
         if (gameState.bucks >= p.getLevelUpCost()) {
             gameState.bucks -= p.getLevelUpCost();
             p.levelUp();
-            toast.success(`${p.name} upgraded to level ${p.level}!`, { position: 'bottom-right' });
             clearInterval(digGifInterval);
             digGifInterval = setInterval(
                 () => {
