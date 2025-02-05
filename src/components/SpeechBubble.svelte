@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { children, show } = $props();
+    let { children, show }: { children: Function; show: boolean } = $props();
 </script>
 
 {#if show}

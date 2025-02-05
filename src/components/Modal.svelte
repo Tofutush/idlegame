@@ -1,5 +1,17 @@
 <script lang="ts">
-    let { show, hide, children, width = 800, height = 600 } = $props();
+    let {
+        show,
+        hide,
+        children,
+        width = 800,
+        height = 600,
+    }: {
+        show: boolean;
+        hide: () => void;
+        children: Function;
+        width?: number;
+        height?: number;
+    } = $props();
 </script>
 
 {#if show}
