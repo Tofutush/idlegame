@@ -62,6 +62,6 @@
     <SpeechBubble show={bubbleShown}>{speech}</SpeechBubble>
     <img src={isDigging ? imgDig : img} alt="placeholder" style="height: 200px" />
     <p>Level: {p.level}</p>
-    <button class="clicky" onclick={digRock} onmousedown={() => (isDigging = true)} onmouseup={() => (isDigging = false)}>Dig</button>
+    <button class="clicky" onclick={digRock} onmousedown={() => (isDigging = true)} onmouseup={() => (isDigging = false)} onmouseleave={() => (isDigging = false)}>Dig</button>
     <button class="clicky" onclick={levelUp}>Level Up (cost: {p.getLevelUpCost()})</button>
 </div>
