@@ -22,20 +22,10 @@
     }
     function giveBounty() {
         if (Math.random() < chance) {
-            toast.success(
-                $_('caughtPrisoner', {
-                    values: { name: $_('names.' + p.name) },
-                }),
-                { position: 'bottom-right' },
-            );
+            toast.success(`You caught ${p.name}!`);
             gameState.prisoners.push(p.name);
         } else {
-            toast.error(
-                $_('escapedPrisoner', {
-                    values: { name: $_('names.' + p.name) },
-                }),
-                { position: 'bottom-right' },
-            );
+            toast.error(`You failed. ${p.name} escaped.`);
         }
         gameState.bucks -= bountyGiven;
         hideModal();
@@ -47,12 +37,8 @@
 </script>
 
 <div class="bounty">
-    <h3 style="color: {p.color}">{$_('names.' + p.name)}</h3>
-    <p>
-        {$_('100catchBounty', {
-            values: { b: p.bounty },
-        })}
-    </p>
+    <h3 style="color: {p.color}">{p.name}</h3>
+    <p>Will definitely be caught if the bounty is ฿{p.bounty}.</p>
     <button class="clicky" onclick={showModal}>{$_('catchThis')}</button>
 </div>
 <Modal show={modalShown} hide={hideModal}>

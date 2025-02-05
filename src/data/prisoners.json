@@ -27,6 +27,25 @@
         ]
     },
     {
+        "name": "Ribbon",
+        "color": "#E368D3",
+        "speech": [
+            "I could be baking right now.",
+            "I want to go home.",
+            "Can I make some mud pie out of all this dirt?"
+        ]
+    },
+    {
+        "name": "Cosmo",
+        "color": "#998CBD",
+        "speech": [
+            "Jerboa is lying his ass out.",
+            "They're lying when they told me I could get out on good behavior.",
+            "I'm going to be here till I die.",
+            "My hands are too delicate for this."
+        ]
+    },
+    {
         "name": "Sparky",
         "color": "#00ccff",
         "speech": [
