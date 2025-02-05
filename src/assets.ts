@@ -1,7 +1,5 @@
 const images = import.meta.glob('./assets/*.png');
 async function getImage(name: string): Promise<string> {
-    console.log(images);
-
     const imagePath = `./assets/${name}.png`;
     if (images[imagePath]) {
         const mod = await images[imagePath]() as { default: string };
