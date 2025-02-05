@@ -1,10 +1,10 @@
 <script lang="ts">
     import gameState from '../classes/gameState.svelte';
-    let progress = $derived(Math.min(gameState.rocks / gameState.quota, 1) * 100);
+    let progress = $derived(Math.min(gameState.rocks / gameState.getQuota(), 1) * 100);
 </script>
 
 <div class="quota-meter" style="background: linear-gradient(to right, var(--gray) {progress}%, transparent {progress}%);">
-    <div class="quota-progress">{gameState.rocks} / {gameState.quota}</div>
+    <div class="quota-progress">{gameState.rocks} / {gameState.getQuota()}</div>
 </div>
 
 <style>
