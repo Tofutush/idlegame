@@ -3,8 +3,9 @@
     import { _ } from 'svelte-i18n';
     import gameState from '../classes/gameState.svelte';
     import Modal from './Modal.svelte';
+    import type Prisoner from '../classes/Prisoner.svelte';
 
-    let { p } = $props();
+    let { p }: { p: Prisoner } = $props();
     let modalShown = $state(false);
     let bountyGiven = $state(0);
     let chance = $derived(bountyGiven / p.bounty);
