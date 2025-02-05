@@ -7,8 +7,7 @@ const campLevelRewards = function (level: number) {
             break;
         case 3:
             gameState.bucks *= 2;
-        default:
-            return;
+            break;
     }
 }
 export default campLevelRewards;
