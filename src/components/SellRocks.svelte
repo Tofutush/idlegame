@@ -27,7 +27,7 @@
 
     function handleClick() {
         if (gameState.rocks <= 0) {
-            toast.error($_('notEnoughRocks'));
+            toast.error($_('notEnoughRocks'), { position: 'bottom-right' });
         } else {
             showModal();
         }

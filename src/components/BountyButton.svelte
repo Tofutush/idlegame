@@ -9,7 +9,7 @@
 
     function showModal() {
         if (gameState.bucks > 0) modalShown = true;
-        else toast.error($_('notEnoughMoney'));
+        else toast.error($_('notEnoughMoney'), { position: 'bottom-right' });
     }
 
     export function hideBountyModal() {

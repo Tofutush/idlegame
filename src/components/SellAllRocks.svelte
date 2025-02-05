@@ -5,7 +5,7 @@
 
     function sellAll() {
         if (gameState.rocks > 0) sellRocks(gameState.rocks);
-        else toast.error("You don't have enough rocks!");
+        else toast.error("You don't have enough rocks!", { position: 'bottom-right' });
     }
 </script>
 

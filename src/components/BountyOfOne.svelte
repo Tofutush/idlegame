@@ -14,7 +14,7 @@
         if (gameState.bucks > 0) {
             bountyGiven = 0;
             modalShown = true;
-        } else toast.error($_('notEnoughMoney'));
+        } else toast.error($_('notEnoughMoney'), { position: 'bottom-right' });
     }
     function hideModal() {
         modalShown = false;
@@ -25,6 +25,7 @@
                 $_('caughtPrisoner', {
                     values: { name: $_('names.' + p.name) },
                 }),
+                { position: 'bottom-right' },
             );
             gameState.prisoners.push(p.name);
         } else {
@@ -32,6 +33,7 @@
                 $_('escapedPrisoner', {
                     values: { name: $_('names.' + p.name) },
                 }),
+                { position: 'bottom-right' },
             );
         }
         gameState.bucks -= bountyGiven;

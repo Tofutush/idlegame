@@ -20,6 +20,7 @@
         if (gameState.bucks >= p.getLevelUpCost()) {
             gameState.bucks -= p.getLevelUpCost();
             p.levelUp();
+            toast.success(`${p.name} upgraded to level ${p.level}`, { position: 'bottom-right' });
             clearInterval(digGifInterval);
             digGifInterval = setInterval(
                 () => {
@@ -28,7 +29,7 @@
                 Math.max(50, 1000 / p.level),
             );
         } else {
-            toast.error('Not enough money!');
+            toast.error('Not enough money!', { position: 'bottom-right' });
         }
     }
 

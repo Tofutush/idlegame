@@ -7,10 +7,10 @@
         if (gameState.rocks >= gameState.quota) {
             gameState.rocks -= gameState.quota;
             gameState.level++;
-            toast.success(`Camp upgraded to level ${gameState.level}!`);
+            toast.success(`Camp upgraded to level ${gameState.level}!`, { position: 'bottom-right' });
             gameState.quota = Math.round(gameState.quota * 1.5);
         } else {
-            toast.error('Not enough rocks!');
+            toast.error('Not enough rocks!', { position: 'bottom-right' });
         }
     }
 </script>
