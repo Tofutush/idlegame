@@ -18,5 +18,6 @@
         max-width: 100%;
         overflow-x: auto;
         padding: 12px 0;
+        margin: 24px 0;
     }
 </style>
