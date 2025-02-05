@@ -34,6 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 998;
     }
     .modal {
         background-color: var(--bg);
@@ -42,6 +43,7 @@
         padding: 16px;
         border-radius: 12px;
         overflow-y: auto;
+        z-index: 999;
     }
     .close-button {
         float: right;
