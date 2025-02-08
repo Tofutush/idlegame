@@ -91,7 +91,7 @@
             <div style="white-space: nowrap">cost: {p.getLevelUpCost()}</div>
         </div>
     </div>
-    <div class="bubble" style="display: {bubbleShown ? 'block' : 'none'}; border-color: {p.color}">{speech}</div>
+    <SpeechBubble show={bubbleShown} color={p.color} text={speech} />
 </div>
 
 <style>
@@ -114,25 +114,5 @@
         align-items: flex-start;
         justify-content: flex-end;
         gap: 6px;
-    }
-    .bubble {
-        border: 6px solid;
-        text-align: center;
-        border-radius: 12px;
-        padding: 6px 12px;
-        margin-top: 12px;
-        hyphens: auto;
-        position: relative;
-    }
-    .bubble::before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border: 12px solid transparent;
-        border-bottom-color: inherit;
-        top: -24px;
-        left: 24px;
-        transform: translateX(-50%);
     }
 </style>
