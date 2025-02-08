@@ -12,13 +12,10 @@ class Prisoner extends Character {
     efficiency = $state<number>(0);
     levelUpCost = $state<number>(0);
     level = $state<number>(0);
-    speech: Array<string> = [];
     constructor(props: PrisonerProps) {
         super(props);
         this.bounty = props.bounty;
-        this.efficiency = props.efficiency;
         this.levelUpCost = props.levelUpCost;
-        this.speech = props.speech;
         this.level = props.level;
     }
     getAmountRocksPerSecond() {
