@@ -18,7 +18,7 @@ class Prisoner extends Character {
         this.levelUpCost = props.levelUpCost;
         this.level = props.level;
     }
-    getAmountRocksPerSecond() {
+    getRPS() {
         return this.efficiency * this.level;
     }
     levelUp() {

@@ -57,7 +57,7 @@
     }
 
     function autoDigRock() {
-        gameState.rocks += p.getAmountRocksPerSecond();
+        gameState.rocks += p.getRPS();
     }
     setInterval(autoDigRock, 1000);
     let digGifInterval = setInterval(

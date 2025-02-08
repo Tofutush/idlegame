@@ -10,7 +10,7 @@ class Guard extends Character {
         let prisonerList = getPrisonersList();
         let totalRPS = 0;
         for (let z = 0; z < prisonerList.length; z++) {
-            totalRPS += prisonerList[z].getAmountRocksPerSecond();
+            totalRPS += prisonerList[z].getRPS();
         }
         return Math.round(totalRPS * this.efficiency / 100);
     }
