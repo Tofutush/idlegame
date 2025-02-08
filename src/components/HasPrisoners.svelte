@@ -19,6 +19,5 @@
         overflow-x: auto;
         padding: 12px;
         margin: 24px 0;
-        scrollbar-width: none;
     }
 </style>
