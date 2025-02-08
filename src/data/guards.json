@@ -2,6 +2,7 @@
     {
         "name": "Pumpkin",
         "color": "#E3744D",
+        "efficiency": 1,
         "speech": [
             "Are we being too harsh?",
             "Maybe we should be nicer to them.",
@@ -13,6 +14,7 @@
     {
         "name": "Halcyon",
         "color": "#008E9B",
+        "efficiency": 2,
         "speech": [
             "Don't start trouble. You can get out early on good behavior.",
             "Work hard. I also work hard.",
@@ -22,6 +24,7 @@
     {
         "name": "Paperweight",
         "color": "#2e2e2e",
+        "efficiency": 3,
         "speech": [
             "Why do I have to work.",
             "I should be sitting in an office.",
@@ -33,6 +36,7 @@
     {
         "name": "Goose",
         "color": "#D54269",
+        "efficiency": 5,
         "speech": [
             "Paperweight sir, have you taken your meds today?",
             "We're being too easy on them.",
