@@ -8,6 +8,7 @@
     import SellAllRocks from './components/SellAllRocks.svelte';
     import SellRocks from './components/SellRocks.svelte';
     import StoryButton from './components/StoryButton.svelte';
+    import HasGuards from './components/HasGuards.svelte';
 </script>
 
 <Toaster />
@@ -28,6 +29,7 @@
     </header>
     <div class="menu"><InfoButton /></div>
     <HasPrisoners />
+    <HasGuards />
 </main>
 
 <style>

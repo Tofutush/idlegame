@@ -36,10 +36,20 @@
 </script>
 
 <div class="guard">
-    <div style="color: {g.color}">{g.name}</div>
+    <div style="color: {g.color}; font-weight: bold;">{g.name}</div>
     {#if imgLoaded}
-        <img src={img} alt={g.name} />
+        <img src={img} alt={g.name} style="height: 200px" />
     {/if}
     <button class="clicky" onclick={talk}>Talk</button>
     <SpeechBubble show={bubbleShown} color={g.color} text={speechBubble.speech} />
 </div>
+
+<style>
+    .guard {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+</style>
