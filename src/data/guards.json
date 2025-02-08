@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Pumpkin",
+        "color": "#E3744D",
+        "speech": [
+            "Are we being too harsh?",
+            "Maybe we should be nicer to them.",
+            "That must've hurt! Are you okay?",
+            "Do you need a break? It's alright!",
+            "Here, have some snacks!"
+        ]
+    },
+    {
+        "name": "Halcyon",
+        "color": "#008E9B",
+        "speech": [
+            "Don't start trouble. You can get out early on good behavior.",
+            "Work hard. I also work hard.",
+            "You can slack off; just don't let me catch you."
+        ]
+    },
+    {
+        "name": "Paperweight",
+        "color": "#2e2e2e",
+        "speech": [
+            "Why do I have to work.",
+            "I should be sitting in an office.",
+            "My legs can't take it anymore.",
+            "My knees say it's going to rain.",
+            "I'm retiring as soon as I can."
+        ]
+    },
+    {
+        "name": "Goose",
+        "color": "#D54269",
+        "speech": [
+            "Paperweight sir, have you taken your meds today?",
+            "We're being too easy on them.",
+            "Some of them need to get whipped into shape.",
+            "Is there a black house here? Yes? That's amazing!",
+            "Off to solitary confinement, you."
+        ]
+    }
+]
