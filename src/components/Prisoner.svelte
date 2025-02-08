@@ -56,10 +56,11 @@
         showSpeechBubble();
     }
 
-    function autoDigRock() {
+    // auto dig
+    setInterval(() => {
         gameState.rocks += p.getRPS();
-    }
-    setInterval(autoDigRock, 1000);
+    }, 1000);
+
     let digGifInterval = setInterval(
         () => {
             if (p.level !== 0) isDigging = !isDigging;
