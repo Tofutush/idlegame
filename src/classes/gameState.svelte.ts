@@ -5,7 +5,7 @@ class GameState {
     level = $state(1);
     exchangeRate = $state(1);
     prisoners = $state(['Jerboa']);
-    guards = $state([]);
+    guards: Array<string> = $state([]);
     getQuota() {
         return Math.round(100 * Math.pow(1.5, this.level - 1));
     }

@@ -1,4 +1,5 @@
 import gameState from './classes/gameState.svelte';
+import guardClassList from './data/guardClasses';
 import prisonerClassList from './data/prisonersClasses';
 
 function findPrisoner(name: string) {
@@ -16,6 +17,10 @@ function getPrisonersList() {
 
 function getNotHavePrisonersList() {
     return prisonerClassList.filter(p => !gameState.prisoners.includes(p.name));
+}
+
+function getGuardsList() {
+    return guardClassList.filter(g => gameState.guards.includes(g.name));
 }
 
 function getRandomInArray(arr: Array<any>) {
@@ -46,6 +51,7 @@ export {
     getNotHavePrisonersList,
     getPrisonersList,
     getRandomInArray,
+    getGuardsList,
     getRandomInArrayExcept,
     calcHowManyBucks,
     sellRocks
