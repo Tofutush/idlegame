@@ -5,13 +5,12 @@
     import { getRandomInArrayExcept } from '../utils';
     import SpeechBubble from './SpeechBubble.svelte';
     import getImage from '../assets';
+    import SpeechBubbleClass from '../classes/SpeechBubble.svelte';
 
     let { p }: { p: Prisoner } = $props();
 
     // state vars
     let bubbleShown = $state(false);
-    let speech = $state('');
-    let lastSpeech = $state('');
     let isDigging = $state(false);
 
     // imgs
@@ -53,7 +52,7 @@
 
     function digRock() {
         gameState.rocks += p.efficiency;
-        showSpeechBubble();
+        speechBubble.showBubble();
     }
 
     // auto dig
@@ -68,13 +67,12 @@
         Math.max(50, 1000 / p.level),
     );
 
-    let bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
-    function showSpeechBubble() {
-        clearTimeout(bubbleTimeout);
-        speech = lastSpeech = getRandomInArrayExcept(p.speech, [lastSpeech]);
-        bubbleShown = true;
-        bubbleTimeout = setTimeout(() => (bubbleShown = false), 3000);
-    }
+    // bubble
+    let speechBubble = new SpeechBubbleClass({
+        speechList: p.speech,
+        hideFunc: () => (bubbleShown = false),
+        showFunc: () => (bubbleShown = true),
+    });
 </script>
 
 <div class="prisoner">
@@ -92,7 +90,7 @@
             <div style="white-space: nowrap">cost: {p.getLevelUpCost()}</div>
         </div>
     </div>
-    <SpeechBubble show={bubbleShown} color={p.color} text={speech} />
+    <SpeechBubble show={bubbleShown} color={p.color} text={speechBubble.speech} />
 </div>
 
 <style>

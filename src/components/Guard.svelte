@@ -2,8 +2,11 @@
     import getImage from '../assets';
     import gameState from '../classes/gameState.svelte';
     import type Guard from '../classes/Guard';
+    import SpeechBubbleClass from '../classes/SpeechBubble.svelte';
+    import SpeechBubble from './SpeechBubble.svelte';
 
     let { g }: { g: Guard } = $props();
+    let bubbleShown = $state(false);
 
     let img = $state('');
     let imgLoaded = $state(false);
@@ -22,7 +25,14 @@
         gameState.rocks += g.getRPS();
     }, 1000);
 
-    function talk() {}
+    let speechBubble = new SpeechBubbleClass({
+        speechList: g.speech,
+        showFunc: () => (bubbleShown = true),
+        hideFunc: () => (bubbleShown = false),
+    });
+    function talk() {
+        speechBubble.showBubble();
+    }
 </script>
 
 <div class="guard">
@@ -31,4 +41,5 @@
         <img src={img} alt={g.name} />
     {/if}
     <button class="clicky" onclick={talk}>Talk</button>
+    <SpeechBubble show={bubbleShown} color={g.color} text={speechBubble.speech} />
 </div>
