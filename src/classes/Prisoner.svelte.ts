@@ -3,7 +3,6 @@ import Character from "./Character";
 
 type PrisonerProps = CharacterProps & {
     bounty: number,
-    efficiency: number,
     levelUpCost: number,
     level: number
 }
