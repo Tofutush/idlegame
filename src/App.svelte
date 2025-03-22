@@ -9,10 +9,16 @@
     import SellRocks from './components/SellRocks.svelte';
     import StoryButton from './components/StoryButton.svelte';
     import HasGuards from './components/HasGuards.svelte';
+    import Modal from './components/Modal.svelte';
+
+    let showModal = $state(true);
 </script>
 
 <Toaster />
 <main>
+    <Modal show={showModal} hide={() => (showModal = false)}>
+        <p>This is a WORK IN PROGRESS, and your game progress is NOT SAVED (bc i havent made save / load). Sorry about that!</p>
+    </Modal>
     <header class="header">
         <div class="count">
             <BuckRockCount />
