@@ -18,7 +18,8 @@
 <Toaster />
 <main>
     <Modal show={showModal} hide={() => (showModal = false)}>
-        <p>This is a WORK IN PROGRESS, and your game progress is NOT SAVED (bc i havent made save / load). Sorry about that!</p>
+        <p>You can export your bucks, rocks, prisoners and camp level now, but not anything else and you can't load the game progress either... Sorry about that! :P</p>
+        <p>- TheOliveOli</p>
     </Modal>
     <header class="header">
         <div class="count">
