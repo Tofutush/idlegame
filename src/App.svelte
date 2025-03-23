@@ -6,6 +6,7 @@
     import InfoButton from './components/InfoButton.svelte';
     import QuotaBar from './components/QuotaBar.svelte';
     import SellAllRocks from './components/SellAllRocks.svelte';
+    import ExportGame from './components/ExportGame.svelte';
     import SellRocks from './components/SellRocks.svelte';
     import StoryButton from './components/StoryButton.svelte';
     import HasGuards from './components/HasGuards.svelte';
@@ -30,6 +31,7 @@
                 <SellAllRocks />
                 <BountyButton />
                 <StoryButton />
+                <ExportGame />
             </div>
         </div>
     </header>

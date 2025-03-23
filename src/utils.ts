@@ -46,6 +46,12 @@ function sellRocks(n: number) {
     gameState.bucks += calcHowManyBucks(n);
 }
 
+function expGameState() {
+    let gameStateTxt;
+    gameStateTxt = String(gameState.bucks+gameState.rocks);
+    return gameStateTxt;
+}
+
 export {
     findPrisoner,
     getNotHavePrisonersList,
@@ -54,6 +60,7 @@ export {
     getGuardsList,
     getRandomInArrayExcept,
     calcHowManyBucks,
-    sellRocks
+    sellRocks,
+    expGameState
 };
 
