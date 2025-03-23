@@ -52,6 +52,10 @@ function expGameState() {
     return gameStateTxt;
 }
 
+function impGameState() {
+    
+}
+
 export {
     findPrisoner,
     getNotHavePrisonersList,
