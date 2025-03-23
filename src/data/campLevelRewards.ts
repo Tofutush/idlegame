@@ -8,6 +8,8 @@ const campLevelRewards = function (level: number) {
         case 3:
             gameState.bucks *= 2;
             break;
+        default:
+            gameState.exchangeRate = level;
     }
 }
 export default campLevelRewards;

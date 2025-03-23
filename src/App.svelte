@@ -6,6 +6,7 @@
     import InfoButton from './components/InfoButton.svelte';
     import QuotaBar from './components/QuotaBar.svelte';
     import SellAllRocks from './components/SellAllRocks.svelte';
+    import ExportGame from './components/ExportGame.svelte';
     import SellRocks from './components/SellRocks.svelte';
     import StoryButton from './components/StoryButton.svelte';
     import HasGuards from './components/HasGuards.svelte';
@@ -17,7 +18,8 @@
 <Toaster />
 <main>
     <Modal show={showModal} hide={() => (showModal = false)}>
-        <p>This is a WORK IN PROGRESS, and your game progress is NOT SAVED (bc i havent made save / load). Sorry about that!</p>
+        <p>You can export your bucks, rocks, prisoners and camp level now, but not anything else and you can't load the game progress either... Sorry about that! :P</p>
+        <p>- TheOliveOli</p>
     </Modal>
     <header class="header">
         <div class="count">
@@ -30,6 +32,7 @@
                 <SellAllRocks />
                 <BountyButton />
                 <StoryButton />
+                <ExportGame />
             </div>
         </div>
     </header>
