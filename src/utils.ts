@@ -48,7 +48,7 @@ function sellRocks(n: number) {
 
 function expGameState() {
     let gameStateTxt;
-    gameStateTxt = String(gameState.bucks+gameState.rocks);
+    gameStateTxt = String(`${gameState.bucks},${gameState.rocks},${gameState.prisoners},${gameState.level}`);
     return gameStateTxt;
 }
 
